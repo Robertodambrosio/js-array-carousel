@@ -6,16 +6,16 @@
 
 .container {
     height: 100vh;
-    background-color: red;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 .slider {
     width: 55%;
     height: 60vh;
-    background-color: #fff;
+    background-color: red;
 }
 
 .thumbnails {
@@ -35,6 +35,32 @@
     object-fit: cover;
 }
 
+.thumbnails {
+    position: relative;
+}
+
+.prev,
+.next {
+    color: white;
+    position: absolute;
+    left: 43%;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    background-color: darkslategrey;
+    border-radius: 50%;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+.prev {
+    top: 1%;
+}
+
+.next {
+    bottom: 1%;
+}
+
 .thumbnails .item {
     height: calc(60vh / 5);
     object-fit: cover;
@@ -42,5 +68,5 @@
 }
 
 .active {
-    display: block
+    display: block;
 }
