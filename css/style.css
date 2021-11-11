@@ -26,7 +26,7 @@
 
 .item {
     height: 60vh;
-} 
+}
 
 .item img {
     height: 100%;
@@ -35,6 +35,10 @@
 }
 
 .thumbnails .item {
-    height: calc(60vh / 5);  
+    height: calc(60vh / 5);
     object-fit: cover;
+}
+
+.active {
+    display: block
 }
