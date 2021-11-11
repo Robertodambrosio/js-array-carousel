@@ -35,3 +35,7 @@ itemsContainer.innerHTML = itemsContent;
 
 const thumbContainer = document.querySelector(".thumbnails-container");
 thumbContainer.innerHTML = itemsContent;
+
+
+const itemsImg = document.querySelector('.item');
+itemsImg.className = 'item active';
