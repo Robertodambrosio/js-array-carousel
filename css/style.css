@@ -3,3 +3,38 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.container {
+    height: 100vh;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider {
+    width: 55%;
+    height: 60vh;
+    background-color: #fff;
+}
+
+.thumbnails {
+    width: 15%;
+    height: 60vh;
+    background-color: black;
+}
+
+.item {
+    height: 60vh;
+} 
+
+.item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.thumbnails .item {
+    height: calc(60vh / 5);  
+    object-fit: cover;
+}
