@@ -36,7 +36,7 @@
 .thumb {
     height: calc(60vh / 5);
     display: block;
-    opacity: 0.4;
+    filter: blur(2px);
     padding: 5px
 }
 
@@ -84,7 +84,7 @@
 }
 
 .thumb.active {
-    opacity: 1;
+    filter: blur(0);
 }
 
 .testo {

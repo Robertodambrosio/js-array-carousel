@@ -43,6 +43,8 @@ itemsContainer.innerHTML = itemsContent;
 const thumbContainer = document.querySelector(".thumbnails-container");
 thumbContainer.innerHTML = thumbContent;
 
+
+
 let activeItem = 0;
 
 const itemsImg = document.getElementsByClassName('item');
@@ -50,7 +52,6 @@ itemsImg[activeItem].classList.add('active');
 
 const thumbImg = document.getElementsByClassName('thumb');
 thumbImg[activeItem].classList.add('active');
-
 
 const prev = document.querySelector('.prev');
 const next = document.querySelector('.next');
@@ -100,3 +101,17 @@ next.addEventListener('click', function(){
     }
 
 })
+
+for (let i = 0; i < items.length; i++) {
+    thumbImg[i].addEventListener("click", function(){
+
+    itemsImg[activeItem].classList.remove('active');
+    thumbImg[activeItem].classList.remove('active');
+
+    activeItem = i;
+    itemsImg[activeItem].classList.add('active');
+    thumbImg[activeItem].classList.add('active');
+    
+})
+}
+
