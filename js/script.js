@@ -7,11 +7,11 @@ const items = [
 ];
 
 const title = [
-    'Svezia',
-    'Svizzera',
-    'Gran Bretagna',
-    'Germania',
-    'Paradise'
+    'New York',
+    'Los Angeles',
+    'Washington DC',
+    'Miami',
+    'Las Vegas'
 ];
 
 const text = [
@@ -34,7 +34,7 @@ for (let i = 0; i < items.length; i++) {
                 </div>`;
     thumbContent += `<div class="thumb"> 
                     <img src="${items[i]}" alt="img1">
-                </div>`;
+                </div>`;     
 }
 
 const itemsContainer = document.querySelector(".items-container");

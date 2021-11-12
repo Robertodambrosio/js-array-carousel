@@ -16,15 +16,17 @@
 .slider {
     width: 55%;
     height: 60vh;
-    background-color: red;
     position: relative
 }
 
 .thumbnails {
     width: 15%;
     height: 60vh;
-    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
+
 
 .item {
     height: 60vh;
@@ -35,6 +37,7 @@
     height: calc(60vh / 5);
     display: block;
     opacity: 0.4;
+    padding: 5px
 }
 
 .item img,
@@ -42,12 +45,16 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
+    border-radius: 30px;
 }
 
 
 .thumbnails {
     position: relative;
+    margin-left: 20px;
 }
+
+
 
 .prev,
 .next {
@@ -65,11 +72,11 @@
 }
 
 .prev {
-    top: 1%;
+    top: 0.1%;
 }
 
 .next {
-    bottom: 1%;
+    bottom: 0.1%;
 }
 
 .active {
@@ -78,7 +85,6 @@
 
 .thumb.active {
     opacity: 1;
-    border: 2px solid white;
 }
 
 .testo {
