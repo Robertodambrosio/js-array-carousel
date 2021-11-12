@@ -65,6 +65,15 @@ next.addEventListener('click', function(){
 
         itemsImg[activeItem].classList.add('active');
         thumbImg[activeItem].classList.add('active');
+
+    } else if (activeItem = items.length - 1){
+
+        itemsImg[activeItem].classList.remove('active');
+        thumbImg[activeItem].classList.remove('active');
+
+        itemsImg[0].classList.add('active');
+        thumbImg[0].classList.add('active');
+        activeItem = 0;
     }
 
  })
@@ -79,6 +88,15 @@ next.addEventListener('click', function(){
 
         itemsImg[activeItem].classList.add('active');
         thumbImg[activeItem].classList.add('active');
- }
+
+ } else if (activeItem == 0){
+
+        itemsImg[0].classList.remove('active');
+        thumbImg[0].classList.remove('active');
+
+        itemsImg[items.length - 1].classList.add('active');
+        thumbImg[items.length - 1].classList.add('active');    
+        activeItem = items.length - 1;
+    }
 
 })
